@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    max-width: 100% !important;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 80px;
+    /* background-color: var(--Medium-Gray); */
+}
+
+nav ul{
+    display: flex;
+    gap: 60px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+
+}
+
+.drop:active,
+.drop:active svg path
+{
+    stroke: var(--Almost-Black);
+    color: var(--Almost-Black);
+
+}
+
+
+.svg{
+    transform: rotate(180deg);
+}
+
+.show{
+    height: 150px;
+}
+
+
+
+.sec2 a:active{
+    color: var(--Almost-Black);
+}
+.sec2 button:active{
+    border: 1px solid var(--Almost-Black);
+    color: var(--Almost-Black);
+}
+
+.nav{
+    display: flex;
+}
+
+.sec1{
+    gap: 70px;
+}
+
+.sec2{
+    gap: 50px;
+    align-items: center;
+}
+
+.sec2 ul{
+    display: flex;
+    align-items: center;
+}
+
+.sec2 button{
+    height: 40px;
+    width: 120px;
+    border: 1px solid var(--Medium-Gray);
+    background: none;
+    color: var(--Medium-Gray);
+    border-radius: 10px;
+
+}
+
+.dropcontent{
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 1px  rgba(128, 128, 128, 0.63);
+   border-radius: 16px;
+   overflow: hidden;
+   margin-top: 25px;
+   margin-left: -50px;
+   transition: .4s;
+   background-color: white;
+}
+
+.one{
+   width: 140px;
+   height: 0px;
+  display: flex;
+  
+  
+}
+.two{
+   width: 120px;
+   height: 0px;
+   margin-left: -20px;
+  
+}
+
+.dropcontent ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    
+    
+}
+
+.dropcontent ul li a{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.dropcontent ul li:hover{
+
+    background-color: rgba(128, 128, 128, 0.05);
+}
+
+.dropcontent ul li
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 31%;
+
+}
+
+.left button{
+    height: 40px;
+    width: 120px;
+    border:none;
+    background: var(--Almost-Black);
+    color: white;
+    border-radius: 12px;
+}
+
+.left h1{
+    font-size: 70px;
+}
+
+.left p{
+    color: rgba(52, 52, 52, 0.603);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.right{
+    height: 100%;
+    width: 40%;
+    background-image: url(images/image-hero-desktop.png);
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover; */
+    background-size: contain;
+
+}
+
+
+.sponsors{
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.sidebar-total{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px){
+    .logo{
+        display: flex;
+    }
+    nav{
+        /* background-color: red; */
+        padding: 0px 10px;
+    }
+
+    .nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sec1 ul{
+        display: none;
+    }
+    .sec2{
+        display: none;
+    }
+
+    .wrap{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        align-content: flex-end;
+        justify-content: flex-end;
+/* overflow: hidden; */
+    }
+
+    .left{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .left h1{
+        font-size: 30px;
+        
+    }
+
+    .left p{
+        font-size: 16px;
+    }
+
+    .sponsors{
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .sponsors img{
+        height: 18px;
+        width: 65px;
+        overflow: visible;
+    }
+
+    .right{
+        background-size: 100%;
+        height: 40%;
+        width: 100%;
+        /* background-color: red; */
+        /* overflow: hidden; */
+        background-image: url(images/image-hero-mobile.png);
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 20px;
+        transition: .4s;
+        /* float: right; */
+    }
+    .row-ham{
+        display: flex;
+    }
+
+    .hamburger span{
+        width: 50%;
+        border: 1px solid black;
+    }
+    .sidebar-total{
+        width: 0px;
+        /* background-color: blue; */
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        inset: 0;
+        margin-left: auto;
+        overflow: hidden;
+        transition: .4s;
+  
+        /* margin-left: auto; */
+    }
+
+    .exit{
+        flex: 1;
+        /* background-color: red; */
+        /* transition-delay: 1s; */
+        background-color: rgba(0, 0, 0, 0.177);
+    }
+
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        background-color: white;
+        height: 100%;
+      
+    }
+
+    .sidebar ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .dropcontent{
+    position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+       border-radius: 16px;
+       overflow: hidden;
+       margin: 0px;
+       transition: .4s;
+       background-color: white;
+    }
+    
+    .one{
+       width: 140px;
+       height: 0px;
+      display: flex;
+      
+      
+    }
+    .two{
+       width: 120px;
+       height: 0px;
+      
+    }
+
+    .side-nav{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0px 10px;
+    }
+
+    .side-nav .hamburger .row-one span:nth-child(1){
+        rotate: 45deg;
+
+    }
+    .side-nav .hamburger .row-one span:nth-child(2){
+        rotate: -45deg;
+        margin-left: -3px;
+
+    }
+    .side-nav .hamburger .row-three span:nth-child(1){
+        rotate: -45deg;
+
+    }
+    .side-nav .hamburger .row-three span:nth-child(2){
+        rotate: 45deg;
+        margin-left: -3px;
+    }
+    .side-nav .hamburger .row-two:nth-child(2){
+        display: none;
+
+    }
+
+    .show{
+        width: 100%;
+    }
+    
+}
