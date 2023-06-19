@@ -72,8 +72,7 @@ nav a:focus{
 .sec2 a:active{
     color: var(--Almost-Black);
 }
-.sec2 button:active,
-.sec2 button:focus
+.sec2 button:active
 
 {
     border: 2px solid var(--Almost-Black);
