@@ -11,8 +11,12 @@
 --Almost-Black: hsl(0, 0%, 8%);
 }
 
+
+
 body{
-    max-width: 100% !important;
+    /* max-width: 100% !important; */
+    transition: all .4s;
+
 }
 
 li{
@@ -57,14 +61,25 @@ nav a{
     height: 150px;
 }
 
+nav a:focus{
+    font-weight: 700;
+    color: var(--Almost-Black);
+    
+}
+
 
 
 .sec2 a:active{
     color: var(--Almost-Black);
 }
-.sec2 button:active{
-    border: 1px solid var(--Almost-Black);
+.sec2 button:active,
+.sec2 button:focus
+
+{
+    border: 2px solid var(--Almost-Black);
     color: var(--Almost-Black);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .nav{
@@ -180,6 +195,18 @@ nav a{
     border:none;
     background: var(--Almost-Black);
     color: white;
+    border-radius: 12px;
+}
+.left button:focus{
+    height: 40px;
+    width: 120px;
+    border:none;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid black;
+    /* background: var(--Almost-Black); */
+    color: black;
     border-radius: 12px;
 }
 
@@ -303,7 +330,7 @@ nav a{
     .sidebar-total{
         width: 0px;
         /* background-color: blue; */
-        position: absolute;
+        position: fixed;
         height: 100vh;
         display: flex;
         inset: 0;
