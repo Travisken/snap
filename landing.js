@@ -7,24 +7,14 @@ let dropContentFour= document.querySelector('#dropFour');
 let sideBar= document.querySelector('.sidebar-total');
 let burger= document.querySelector('.hamburger');
 
+// hamburger toggle funtion
+
 function clickOn(){
     sideBar.classList.toggle('show');
 
-    // if(sideBar.style.width = '100%'){
-        // document.querySelector('.sp1').style.rotate='45deg'
-    //     document.querySelector('.sp2').style.rotate='-45deg'
-    //     document.querySelector('.sp3').style.rotate='-45deg'
-    //     document.querySelector('.sp4').style.rotate='45deg'
-    //     document.querySelector('.sp5').style.border='none'
-    //     document.querySelector('.sp6').style.border='none'
-    //    console.log('functioning')
-    //    sideBar.classList.toggle('show')
-       
-    // }else{
-    //     sideBar.classList.toggle('show');
-    //     console.log('working')
-    // }
 }
+
+// navigation first dropdown function
 
 function mouseOver(){
     dropSvgOne.classList.toggle('svg');
@@ -40,18 +30,17 @@ if (dropContentThree.style.height === '0px') {
 }
 
 
+
 if (dropContent.style.height === '200px') {
     dropContentTwo.style.height = '0px'
+}
+if (dropContentThree.style.height === '200px') {
+    dropContentFour.style.height = '0px'
 }
 
 
 
-
-//     if(document.querySelector('.more-one').style="transform"){
-
-// console.log('working')
-//     }
-    // dropContent.classList.toggle('display');
+// navigation second dropdown function
 }
 
 function clickMe(){
@@ -74,6 +63,9 @@ function clickMe(){
 
     if (dropContentTwo.style.height === '120px') {
         dropContent.style.height = '0px'
+    } 
+    if (dropContentFour.style.height === '120px') {
+        dropContentThree.style.height = '0px'
     } 
 
 
