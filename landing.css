@@ -1,29 +1,29 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-:root{
+:root {
     --Almost-White: hsl(0, 0%, 98%);
     --Medium-Gray: hsl(0, 0%, 41%);
---Almost-Black: hsl(0, 0%, 8%);
+    --Almost-Black: hsl(0, 0%, 8%);
 }
 
 
 
-body{
+body {
     /* max-width: 100% !important; */
     transition: all .4s;
 
 }
 
-li{
+li {
     list-style: none;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,13 +32,13 @@ nav{
     /* background-color: var(--Medium-Gray); */
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 60px;
 
 }
 
-nav a{
+nav a {
     font-size: 1vw;
     text-decoration: none;
     color: var(--Medium-Gray);
@@ -46,61 +46,59 @@ nav a{
 }
 
 .drop:active,
-.drop:active svg path
-{
+.drop:active svg path {
     stroke: var(--Almost-Black);
     color: var(--Almost-Black);
 
 }
 
 
-.svg{
+.svg {
     transform: rotate(180deg);
 }
 
-.show{
+.show {
     height: 150px;
 }
 
-nav a:focus{
+nav a:focus {
     font-weight: 700;
     color: var(--Almost-Black);
-    
+
 }
 
 
 
-.sec2 a:active{
+.sec2 a:active {
     color: var(--Almost-Black);
 }
-.sec2 button:active
 
-{
+.sec2 button:active {
     border: 2px solid var(--Almost-Black);
     color: var(--Almost-Black);
     font-size: 16px;
     font-weight: 600;
 }
 
-.nav{
+.nav {
     display: flex;
 }
 
-.sec1{
+.sec1 {
     gap: 70px;
 }
 
-.sec2{
+.sec2 {
     gap: 50px;
     align-items: center;
 }
 
-.sec2 ul{
+.sec2 ul {
     display: flex;
     align-items: center;
 }
 
-.sec2 button{
+.sec2 button {
     height: 40px;
     width: 120px;
     border: 1px solid var(--Medium-Gray);
@@ -110,58 +108,58 @@ nav a:focus{
 
 }
 
-.dropcontent{
-    
+.dropcontent {
+
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 20px 1px  rgba(128, 128, 128, 0.63);
-   border-radius: 16px;
-   overflow: hidden;
-   margin-top: 25px;
-   margin-left: -50px;
-   transition: .4s;
-   background-color: white;
+    box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.63);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-left: -50px;
+    transition: .4s;
+    background-color: white;
 }
 
-.one{
-   width: 140px;
-   height: 0px;
-  display: flex;
-  
-  
-}
-.two{
-   width: 120px;
-   height: 0px;
-   margin-left: -20px;
-  
+.one {
+    width: 140px;
+    height: 0px;
+    display: flex;
+
+
 }
 
-.dropcontent ul{
+.two {
+    width: 120px;
+    height: 0px;
+    margin-left: -20px;
+
+}
+
+.dropcontent ul {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
     width: 100%;
-    
-    
+
+
 }
 
-.dropcontent ul li a{
+.dropcontent ul li a {
     display: flex;
     gap: 10px;
     font-weight: 600;
 }
 
-.dropcontent ul li:hover{
+.dropcontent ul li:hover {
 
     background-color: rgba(128, 128, 128, 0.05);
 }
 
-.dropcontent ul li
-{
+.dropcontent ul li {
     width: 100%;
     height: 30px;
     display: flex;
@@ -171,7 +169,7 @@ nav a:focus{
 
 
 
-.wrap{
+.wrap {
     display: flex;
     flex-wrap: wrap-reverse;
     width: 100%;
@@ -181,7 +179,7 @@ nav a:focus{
     gap: 50px;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -189,18 +187,19 @@ nav a:focus{
 
 }
 
-.left button{
+.left button {
     height: 40px;
     width: 120px;
-    border:none;
+    border: none;
     background: var(--Almost-Black);
     color: white;
     border-radius: 12px;
 }
-.left button:focus{
+
+.left button:focus {
     height: 40px;
     width: 120px;
-    border:none;
+    border: none;
     font-weight: 700;
     font-size: 16px;
     background-color: white;
@@ -210,17 +209,17 @@ nav a:focus{
     border-radius: 12px;
 }
 
-.left h1{
-    font-size:5.4vw;
+.left h1 {
+    font-size: 5.3vw;
 }
 
-.left p{
+.left p {
     color: rgba(52, 52, 52, 0.603);
     font-weight: 600;
     font-size: 18px;
 }
 
-.right{
+.right {
     height: 100%;
     width: 40%;
     background-image: url(./images/image-hero-desktop.png);
@@ -233,7 +232,7 @@ nav a:focus{
 }
 
 
-.sponsors{
+.sponsors {
     display: flex;
     gap: 40px;
     width: fit-content;
@@ -241,70 +240,73 @@ nav a:focus{
     margin-top: 100px;
 }
 
-.sidebar-total{
+.sidebar-total {
     display: none;
 }
 
 
 
 
-@media screen and (max-width: 800px){
-    .logo{
+@media screen and (max-width: 800px) {
+    .logo {
         display: flex;
     }
-    nav{
+
+    nav {
         /* background-color: red; */
         padding: 0px 10px;
     }
 
-    .nav{
+    .nav {
         justify-content: space-between;
         width: 100%;
     }
-    .sec1 ul{
-        display: none;
-    }
-    .sec2{
+
+    .sec1 ul {
         display: none;
     }
 
-    .wrap{
+    .sec2 {
+        display: none;
+    }
+
+    .wrap {
         height: 100vh;
         display: flex;
         align-items: center;
         align-content: flex-end;
         justify-content: flex-end;
-/* overflow: hidden; */
+        /* overflow: hidden; */
     }
 
-    .left{
+    .left {
         width: 100%;
         text-align: center;
         align-items: center;
-        
+
     }
 
-    .left h1{
+    .left h1 {
         font-size: 30px;
-        
+
     }
 
-    .left p{
+    .left p {
         font-size: 16px;
     }
 
-    .sponsors{
+    .sponsors {
         gap: 20px;
         margin-top: 20px;
     }
 
-    .sponsors img{
+    .sponsors img {
         height: 18px;
         width: 65px;
         overflow: visible;
     }
 
-    .right{
+    .right {
         background-size: 100%;
         height: 40%;
         width: 100%;
@@ -313,7 +315,7 @@ nav a:focus{
         background-image: url(./images/image-hero-mobile.png);
     }
 
-    .hamburger{
+    .hamburger {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -321,15 +323,17 @@ nav a:focus{
         transition: .4s;
         /* float: right; */
     }
-    .row-ham{
+
+    .row-ham {
         display: flex;
     }
 
-    .hamburger span{
+    .hamburger span {
         width: 50%;
         border: 1px solid black;
     }
-    .sidebar-total{
+
+    .sidebar-total {
         width: 0px;
         /* background-color: blue; */
         position: fixed;
@@ -339,59 +343,60 @@ nav a:focus{
         margin-left: auto;
         overflow: hidden;
         transition: .4s;
-  
+
         /* margin-left: auto; */
     }
 
-    .exit{
+    .exit {
         flex: 1;
         /* background-color: red; */
         /* transition-delay: 1s; */
         background-color: rgba(0, 0, 0, 0.177);
     }
 
-    .sidebar{
+    .sidebar {
         display: flex;
         flex-direction: column;
         width: 70%;
         background-color: white;
         height: 100%;
-      
+
     }
 
-    .sidebar ul{
+    .sidebar ul {
         flex-direction: column;
         gap: 20px;
     }
 
 
-    .dropcontent{
-    position: relative;
+    .dropcontent {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         box-shadow: none;
-       border-radius: 16px;
-       overflow: hidden;
-       margin: 0px;
-       transition: .4s;
-       background-color: white;
-    }
-    
-    .one{
-       width: 140px;
-       height: 0px;
-      display: flex;
-      
-      
-    }
-    .two{
-       width: 120px;
-       height: 0px;
-      
+        border-radius: 16px;
+        overflow: hidden;
+        margin: 0px;
+        transition: .4s;
+        background-color: white;
     }
 
-    .side-nav{
+    .one {
+        width: 140px;
+        height: 0px;
+        display: flex;
+
+
+    }
+
+    .two {
+        width: 120px;
+        height: 0px;
+
+    }
+
+    .side-nav {
         height: 80px;
         display: flex;
         align-items: center;
@@ -400,30 +405,34 @@ nav a:focus{
         padding: 0px 10px;
     }
 
-    .side-nav .hamburger .row-one span:nth-child(1){
+    .side-nav .hamburger .row-one span:nth-child(1) {
         rotate: 45deg;
 
     }
-    .side-nav .hamburger .row-one span:nth-child(2){
+
+    .side-nav .hamburger .row-one span:nth-child(2) {
         rotate: -45deg;
         margin-left: -3px;
 
     }
-    .side-nav .hamburger .row-three span:nth-child(1){
+
+    .side-nav .hamburger .row-three span:nth-child(1) {
         rotate: -45deg;
 
     }
-    .side-nav .hamburger .row-three span:nth-child(2){
+
+    .side-nav .hamburger .row-three span:nth-child(2) {
         rotate: 45deg;
         margin-left: -3px;
     }
-    .side-nav .hamburger .row-two:nth-child(2){
+
+    .side-nav .hamburger .row-two:nth-child(2) {
         display: none;
 
     }
 
-    .show{
+    .show {
         width: 100%;
     }
-    
+
 }
