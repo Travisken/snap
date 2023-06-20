@@ -222,7 +222,7 @@ nav a:focus{
 .right{
     height: 100%;
     width: 40%;
-    background-image: url(images/image-hero-desktop.png);
+    background-image: url(image-hero-desktop.png);
     /* background-color: red; */
     background-repeat: no-repeat;
     background-position: center;
@@ -307,7 +307,7 @@ nav a:focus{
         width: 100%;
         /* background-color: red; */
         /* overflow: hidden; */
-        background-image: url(images/image-hero-mobile.png);
+        background-image: url(image-hero-mobile.png);
     }
 
     .hamburger{
