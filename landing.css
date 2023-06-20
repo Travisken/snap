@@ -276,16 +276,19 @@ nav a:focus {
     .sec2 {
         display: none;
         flex-direction: column;
-        /* margin-top: 100px; */
+        text-align: center;
     }
+
+    
 
     .side-register{
         height: 40px;
-        width: 120px;
+        width: 100%;
         border: 1px solid var(--Medium-Gray);
         background: none;
         color: var(--Medium-Gray);
         border-radius: 10px;
+        /* flex: 1; */
     
     }
 
